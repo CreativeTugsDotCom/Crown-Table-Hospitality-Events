@@ -1,0 +1,1546 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crown & Table Hospitality & Events | Luxury Event Planning Toronto</title>
+    <meta name="description" content="Toronto's premier luxury event planning and hospitality company. Specializing in luxury weddings, corporate galas, private celebrations, catering, and full-service event coordination.">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Cormorant Garamond (Serif) & Plus Jakarta Sans (Sans-Serif) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            50: '#FDFBF7',
+                            100: '#F7F0E1',
+                            200: '#EBD8B3',
+                            300: '#DFC085',
+                            400: '#D4A857',
+                            500: '#C59A3F', // Primary Champagne Gold
+                            600: '#A37B2C',
+                            700: '#805E1F',
+                            800: '#5F4414',
+                            900: '#402C0A'
+                        },
+                        ivory: {
+                            50: '#FFFFFF',
+                            100: '#FAF8F5', // Soft Cream/Ivory
+                            200: '#F3EFEA',
+                            300: '#E7E0D8'
+                        },
+                        charcoal: {
+                            800: '#262422',
+                            900: '#1A1817', // Deep Soft Black
+                            950: '#11100F'
+                        },
+                        burgundy: {
+                            800: '#581C28',
+                            900: '#3D101A'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif']
+                    },
+                    boxShadow: {
+                        'luxury': '0 20px 50px rgba(197, 154, 63, 0.08)',
+                        'luxury-lg': '0 30px 60px rgba(26, 24, 23, 0.12)',
+                        'gold-glow': '0 0 25px rgba(197, 154, 63, 0.25)'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Keyframe Animations & Parallax */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes goldPulse {
+            0%, 100% { opacity: 0.4; }
+            50% { opacity: 0.8; }
+        }
+
+        .animate-fade-in {
+            animation: fadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        .gold-border-gradient {
+            border-image: linear-gradient(135deg, #EBD8B3, #C59A3F, #805E1F) 1;
+        }
+
+        .gold-text-gradient {
+            background: linear-gradient(135deg, #D4A857 0%, #C59A3F 50%, #805E1F 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gold-bg-gradient {
+            background: linear-gradient(135deg, #D4A857 0%, #C59A3F 60%, #A37B2C 100%);
+        }
+
+        .glass-header {
+            background: rgba(250, 248, 245, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(223, 192, 133, 0.25);
+        }
+
+        /* Image Masking & Subtle Hover Effects */
+        .curved-img-top {
+            border-radius: 120px 120px 16px 16px;
+        }
+
+        .img-zoom-container {
+            overflow: hidden;
+        }
+
+        .img-zoom-container img {
+            transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .img-zoom-container:hover img {
+            transform: scale(1.06);
+        }
+
+        /* Scrollbar custom style */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FAF8F5;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #DFC085;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #C59A3F;
+        }
+
+        /* Hide Scrollbar for filter tab bar on mobile */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-ivory-100 text-charcoal-900 font-sans antialiased selection:bg-gold-200 selection:text-charcoal-950 overflow-x-hidden">
+
+    <header id="main-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4 glass-header border-b border-gold-200/40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+            
+            <!-- Brand Logo -->
+            <a href="#home" class="flex flex-col items-start group">
+                <span class="font-serif text-2xl md:text-3xl tracking-widest text-charcoal-900 font-semibold group-hover:text-gold-600 transition-colors uppercase leading-tight">
+                    Crown & Table
+                </span>
+                <span class="text-[9px] sm:text-[10px] tracking-[0.25em] text-gold-600 font-medium uppercase mt-0.5">
+                    Hospitality & Events • Toronto
+                </span>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <nav class="hidden lg:flex items-center space-x-8 text-xs font-semibold tracking-widest uppercase text-charcoal-800">
+                <a href="#home" class="hover:text-gold-600 transition-colors py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-gold-500 hover:after:w-full after:transition-all">Home</a>
+                <a href="#about" class="hover:text-gold-600 transition-colors py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-gold-500 hover:after:w-full after:transition-all">About</a>
+                <a href="#services" class="hover:text-gold-600 transition-colors py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-gold-500 hover:after:w-full after:transition-all">Services</a>
+                <a href="#perfect-for" class="hover:text-gold-600 transition-colors py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-gold-500 hover:after:w-full after:transition-all">Celebrations</a>
+                <a href="#why-us" class="hover:text-gold-600 transition-colors py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-gold-500 hover:after:w-full after:transition-all">Why Us</a>
+                <a href="#testimonials" class="hover:text-gold-600 transition-colors py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-gold-500 hover:after:w-full after:transition-all">Testimonials</a>
+                <a href="#contact" class="hover:text-gold-600 transition-colors py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-gold-500 hover:after:w-full after:transition-all">Contact</a>
+            </nav>
+
+            <!-- Header CTA & Mobile Menu Button -->
+            <div class="flex items-center space-x-4">
+                <button onclick="openConsultationModal()" class="hidden sm:inline-flex items-center justify-center px-6 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider text-charcoal-900 bg-gold-200 hover:bg-gold-500 hover:text-white border border-gold-300 transition-all duration-300 shadow-sm hover:shadow-gold-glow transform hover:-translate-y-0.5">
+                    Plan Your Event <i class="fa-solid fa-arrow-right ml-2 text-[10px]"></i>
+                </button>
+
+                <!-- Mobile Hamburger Button -->
+                <button id="mobile-menu-btn" class="lg:hidden text-charcoal-900 p-2 focus:outline-none" aria-label="Toggle Menu">
+                    <i id="menu-icon" class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-ivory-100 border-b border-gold-200 px-6 py-6 transition-all duration-300 space-y-4">
+            <a href="#home" class="mobile-link block text-sm font-semibold tracking-wider uppercase text-charcoal-800 hover:text-gold-600">Home</a>
+            <a href="#about" class="mobile-link block text-sm font-semibold tracking-wider uppercase text-charcoal-800 hover:text-gold-600">About</a>
+            <a href="#services" class="mobile-link block text-sm font-semibold tracking-wider uppercase text-charcoal-800 hover:text-gold-600">Services</a>
+            <a href="#perfect-for" class="mobile-link block text-sm font-semibold tracking-wider uppercase text-charcoal-800 hover:text-gold-600">Celebrations</a>
+            <a href="#why-us" class="mobile-link block text-sm font-semibold tracking-wider uppercase text-charcoal-800 hover:text-gold-600">Why Us</a>
+            <a href="#testimonials" class="mobile-link block text-sm font-semibold tracking-wider uppercase text-charcoal-800 hover:text-gold-600">Testimonials</a>
+            <a href="#contact" class="mobile-link block text-sm font-semibold tracking-wider uppercase text-charcoal-800 hover:text-gold-600">Contact</a>
+            
+            <div class="pt-4 border-t border-gold-200 flex flex-col gap-3">
+                <button onclick="openConsultationModal()" class="w-full py-3 rounded-full text-xs font-semibold uppercase tracking-wider text-white bg-charcoal-900 hover:bg-gold-600 transition-colors text-center shadow-md">
+                    Plan Your Event →
+                </button>
+                <a href="tel:6475420279" class="text-center text-xs font-semibold text-gold-700 tracking-wider">
+                    <i class="fa-solid fa-phone mr-2"></i> 647-542-0279
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="relative min-h-screen pt-28 pb-16 md:pt-36 md:pb-24 flex items-center justify-center overflow-hidden bg-gradient-to-b from-ivory-100 via-ivory-50 to-ivory-100">
+        <!-- Banner Ambient Background Overlay -->
+        <div class="absolute inset-0 opacity-10 bg-cover bg-center bg-no-repeat pointer-events-none filter blur-sm scale-105" style="background-image: url('111.jpg');"></div>
+        
+        <!-- Subtle luxury decorative background motifs -->
+        <div class="absolute top-1/4 left-5 w-72 h-72 bg-gold-200/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-10 right-5 w-96 h-96 bg-gold-300/15 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                
+                <!-- Hero Text Column -->
+                <div class="lg:col-span-7 text-center lg:text-left space-y-6">
+                    
+                    <!-- Eyebrow Tag -->
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gold-100 border border-gold-300/60 shadow-sm">
+                        <span class="w-2 h-2 rounded-full bg-gold-500 animate-pulse"></span>
+                        <span class="text-[11px] font-semibold tracking-[0.2em] text-gold-800 uppercase">
+                            CROWN & TABLE HOSPITALITY & EVENTS
+                        </span>
+                    </div>
+
+                    <!-- Main Headline -->
+                    <h1 class="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-normal tracking-tight text-charcoal-950 leading-[1.08]">
+                        From Planning to Glam — <br class="hidden sm:inline">
+                        <span class="italic font-light gold-text-gradient">We Do It All.</span>
+                    </h1>
+
+                    <!-- Supporting Headline -->
+                    <p class="text-base sm:text-lg font-medium text-gold-700 tracking-wide uppercase">
+                        Your One-Stop Event Management Company in Toronto, Canada
+                    </p>
+
+                    <!-- Main Description -->
+                    <p class="text-charcoal-800/80 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0 font-light">
+                        At Crown & Table, we bring every detail together so you can be fully present for the moments that matter. From planning and styling to entertainment, catering and photography, we coordinate the details that turn your vision into an unforgettable experience.
+                    </p>
+
+                    <!-- CTAs -->
+                    <div class="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <button onclick="openConsultationModal()" class="w-full sm:w-auto px-8 py-4 rounded-full text-xs font-semibold tracking-widest uppercase text-white bg-charcoal-900 hover:bg-gold-600 transition-all duration-300 shadow-lg hover:shadow-gold-glow transform hover:-translate-y-0.5">
+                            Plan Your Event <i class="fa-solid fa-calendar-check ml-2"></i>
+                        </button>
+                        <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-full text-xs font-semibold tracking-widest uppercase text-charcoal-900 bg-white hover:bg-gold-100 border border-gold-300 transition-all duration-300 text-center shadow-sm">
+                            Explore Our Services
+                        </a>
+                    </div>
+
+                    <!-- Trust Bar Line -->
+                    <div class="pt-6 border-t border-gold-200/60 flex flex-wrap items-center justify-center lg:justify-start gap-x-4 gap-y-2 text-xs text-charcoal-800/70 font-medium">
+                        <span class="flex items-center gap-1.5"><i class="fa-solid fa-gem text-gold-500 text-[10px]"></i> Weddings</span>
+                        <span class="text-gold-300">•</span>
+                        <span class="flex items-center gap-1.5"><i class="fa-solid fa-champagne-glasses text-gold-500 text-[10px]"></i> Private Events</span>
+                        <span class="text-gold-300">•</span>
+                        <span class="flex items-center gap-1.5"><i class="fa-solid fa-cake-candles text-gold-500 text-[10px]"></i> Celebrations</span>
+                        <span class="text-gold-300">•</span>
+                        <span class="flex items-center gap-1.5"><i class="fa-solid fa-building text-gold-500 text-[10px]"></i> Corporate Gatherings</span>
+                    </div>
+
+                </div>
+
+                <!-- Hero Editorial Visual Stack -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        
+                        <!-- Main Hero Curved Image Banner -->
+                        <div class="curved-img-top img-zoom-container shadow-luxury-lg border-2 border-gold-200/80 bg-white p-2">
+                            <img src="111.jpg" 
+                                 alt="Crown & Table Luxury Event Banner" 
+                                 class="curved-img-top w-full h-[420px] sm:h-[480px] object-cover"
+                                 loading="eager"
+                                 onerror="this.src='https://placehold.co/800x1000/F3EFEA/3D101A?text=Crown+%26+Table+Events'">
+                        </div>
+
+                        <!-- Floating Stat Badge 1 -->
+                        <div class="absolute -bottom-6 -left-4 sm:-left-8 bg-white/95 backdrop-blur-md p-4 sm:p-5 rounded-2xl shadow-luxury border border-gold-200 flex items-center gap-4 max-w-[240px]">
+                            <div class="w-10 h-10 rounded-full bg-gold-100 flex items-center justify-center text-gold-600 text-lg flex-shrink-0">
+                                <i class="fa-solid fa-crown"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs font-bold text-charcoal-900 uppercase tracking-wider">Toronto Luxury</div>
+                                <div class="text-[11px] text-charcoal-800/70">Full-Service Event Planning</div>
+                            </div>
+                        </div>
+
+                        <!-- Floating Quote Card -->
+                        <div class="hidden sm:flex absolute -top-6 -right-6 bg-charcoal-950/90 text-ivory-100 backdrop-blur-md p-4 rounded-2xl shadow-luxury-lg border border-gold-500/30 max-w-[220px] flex-col">
+                            <div class="flex text-gold-400 text-xs gap-1 mb-1">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-[11px] font-serif italic text-gold-100/90 leading-tight">
+                                “Every detail beautifully handled. Every moment made unforgettable.”
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 md:py-28 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+                
+                <!-- Imagery Collage Column -->
+                <div class="lg:col-span-6 order-2 lg:order-1">
+                    <div class="grid grid-cols-2 gap-4 relative">
+                        
+                        <!-- Top Left Image -->
+                        <div class="img-zoom-container rounded-2xl overflow-hidden shadow-md border border-gold-200">
+                            <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=600&q=80" 
+                                 alt="Luxury Banquet Table Setting" 
+                                 class="w-full h-64 sm:h-72 object-cover"
+                                 onerror="this.src='https://placehold.co/600x800/F3EFEA/1A1817?text=Luxury+Table'">
+                        </div>
+
+                        <!-- Top Right Image (shifted down) -->
+                        <div class="img-zoom-container rounded-2xl overflow-hidden shadow-md border border-gold-200 mt-8">
+                            <img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&w=600&q=80" 
+                                 alt="Event Guests Celebrating" 
+                                 class="w-full h-64 sm:h-72 object-cover"
+                                 onerror="this.src='https://placehold.co/600x800/F3EFEA/1A1817?text=Celebration'">
+                        </div>
+
+                        <!-- Wide Bottom Image spanning across -->
+                        <div class="col-span-2 img-zoom-container rounded-2xl overflow-hidden shadow-md border border-gold-200 -mt-4">
+                            <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&w=1000&q=80" 
+                                 alt="Elegant Floral Decor & Styling" 
+                                 class="w-full h-48 sm:h-56 object-cover"
+                                 onerror="this.src='https://placehold.co/1000x500/F3EFEA/1A1817?text=Floral+Styling'">
+                        </div>
+
+                        <!-- Floating Gold Tag -->
+                        <div class="absolute inset-0 m-auto w-32 h-32 bg-gold-500/90 text-white rounded-full backdrop-blur-md flex flex-col items-center justify-center text-center p-2 shadow-xl border-2 border-white transform hover:scale-105 transition-transform cursor-pointer" onclick="openConsultationModal()">
+                            <i class="fa-solid fa-sparkles text-lg mb-1"></i>
+                            <span class="text-[10px] uppercase font-bold tracking-widest leading-tight">Crafting Magic</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Text & Statement Column -->
+                <div class="lg:col-span-6 order-1 lg:order-2 space-y-6">
+                    
+                    <div class="space-y-2">
+                        <span class="text-xs font-semibold tracking-[0.25em] text-gold-600 uppercase">
+                            ABOUT CROWN & TABLE
+                        </span>
+                        <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-normal text-charcoal-950 leading-tight">
+                            Your Vision. Our Expertise. <br>
+                            <span class="italic gold-text-gradient">One Unforgettable Experience.</span>
+                        </h2>
+                    </div>
+
+                    <p class="text-charcoal-800/80 text-base leading-relaxed">
+                        Planning an event should feel exciting — not overwhelming. Crown & Table Hospitality & Events brings together the people, services and creative details needed to create a seamless celebration from beginning to end.
+                    </p>
+
+                    <p class="text-charcoal-800/80 text-base leading-relaxed">
+                        From your first idea to the final guest departure, we manage the moving pieces while you enjoy the moment. Whether you're planning a wedding, birthday, private gathering, faith-based retreat or life celebration, we're here to bring your vision to life.
+                    </p>
+
+                    <!-- Highlighted Statement Box -->
+                    <div class="p-6 rounded-2xl bg-ivory-100 border-l-4 border-gold-500 shadow-sm space-y-2">
+                        <p class="font-serif text-2xl text-charcoal-900 italic font-medium">
+                            “You bring the vision. We bring it to life.”
+                        </p>
+                        <p class="text-xs font-semibold tracking-widest uppercase text-gold-700">
+                            — CROWN & TABLE HOSPITALITY TEAM
+                        </p>
+                    </div>
+
+                    <div class="pt-2">
+                        <button onclick="openConsultationModal()" class="inline-flex items-center text-xs font-bold uppercase tracking-widest text-charcoal-950 hover:text-gold-600 transition-colors group">
+                            Let's Create Something Beautiful 
+                            <span class="ml-2 w-8 h-8 rounded-full bg-gold-100 flex items-center justify-center text-gold-700 group-hover:bg-gold-500 group-hover:text-white transition-all">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </span>
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-20 md:py-28 bg-ivory-100 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-xs font-semibold tracking-[0.25em] text-gold-600 uppercase">
+                    OUR SERVICES
+                </span>
+                <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-normal text-charcoal-950">
+                    Everything You Need. <span class="italic gold-text-gradient">Beautifully Coordinated.</span>
+                </h2>
+                <p class="text-charcoal-800/80 text-base font-light">
+                    From the big picture to the smallest detail, Crown & Table provides the comprehensive services and coordination needed to create a memorable event.
+                </p>
+            </div>
+
+            <!-- Services Grid (9 Cards with Visual Media) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 01: Event Planning & Coordination -->
+                <div class="bg-white rounded-2xl border border-gold-200/80 shadow-sm hover:shadow-luxury hover:-translate-y-1 transition-all duration-300 group flex flex-col justify-between overflow-hidden">
+                    <div>
+                        <div class="relative h-48 sm:h-52 overflow-hidden img-zoom-container">
+                            <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=800&q=80" 
+                                 alt="Event Planning & Coordination" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                 onerror="this.src='https://placehold.co/800x500/F3EFEA/3D101A?text=Event+Planning'">
+                            <div class="absolute top-3 left-3 bg-charcoal-950/80 backdrop-blur-md text-gold-400 font-bold text-xs px-3 py-1 rounded-full border border-gold-500/30">
+                                01
+                            </div>
+                            <div class="absolute top-3 right-3 w-10 h-10 rounded-xl bg-white/90 backdrop-blur-md text-gold-700 flex items-center justify-center text-lg shadow-md group-hover:bg-gold-500 group-hover:text-white transition-colors">
+                                <i class="fa-solid fa-clipboard-list"></i>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-serif text-2xl text-charcoal-950 mb-2 group-hover:text-gold-700 transition-colors">
+                                Event Planning & Coordination
+                            </h3>
+                            <p class="text-charcoal-800/80 text-sm leading-relaxed font-light">
+                                From concept to execution, we coordinate the details, timeline, vendors, and logistics to ensure flawless execution.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-ivory-200 flex items-center justify-between text-xs font-semibold text-gold-700">
+                        <span>Full & Day-Of Packages</span>
+                        <i class="fa-solid fa-chevron-right text-[10px] group-hover:translate-x-1 transition-transform"></i>
+                    </div>
+                </div>
+
+                <!-- Service 02: Emcee & Hosting -->
+                <div class="bg-white rounded-2xl border border-gold-200/80 shadow-sm hover:shadow-luxury hover:-translate-y-1 transition-all duration-300 group flex flex-col justify-between overflow-hidden">
+                    <div>
+                        <div class="relative h-48 sm:h-52 overflow-hidden img-zoom-container">
+                            <img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=800&q=80" 
+                                 alt="Emcee & Hosting" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                 onerror="this.src='https://placehold.co/800x500/F3EFEA/3D101A?text=Emcee+%26+Hosting'">
+                            <div class="absolute top-3 left-3 bg-charcoal-950/80 backdrop-blur-md text-gold-400 font-bold text-xs px-3 py-1 rounded-full border border-gold-500/30">
+                                02
+                            </div>
+                            <div class="absolute top-3 right-3 w-10 h-10 rounded-xl bg-white/90 backdrop-blur-md text-gold-700 flex items-center justify-center text-lg shadow-md group-hover:bg-gold-500 group-hover:text-white transition-colors">
+                                <i class="fa-solid fa-microphone-lines"></i>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-serif text-2xl text-charcoal-950 mb-2 group-hover:text-gold-700 transition-colors">
+                                Emcee & Hosting
+                            </h3>
+                            <p class="text-charcoal-800/80 text-sm leading-relaxed font-light">
+                                Professional hosting and emcee services to keep your celebration engaging, energetic, and running smoothly.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-ivory-200 flex items-center justify-between text-xs font-semibold text-gold-700">
+                        <span>Charming & Engaging</span>
+                        <i class="fa-solid fa-chevron-right text-[10px] group-hover:translate-x-1 transition-transform"></i>
+                    </div>
+                </div>
+
+                <!-- Service 03: DJ, Sound & Lighting -->
+                <div class="bg-white rounded-2xl border border-gold-200/80 shadow-sm hover:shadow-luxury hover:-translate-y-1 transition-all duration-300 group flex flex-col justify-between overflow-hidden">
+                    <div>
+                        <div class="relative h-48 sm:h-52 overflow-hidden img-zoom-container">
+                            <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=800&q=80" 
+                                 alt="DJ, Sound & Lighting" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                 onerror="this.src='https://placehold.co/800x500/F3EFEA/3D101A?text=DJ+Sound+%26+Lighting'">
+                            <div class="absolute top-3 left-3 bg-charcoal-950/80 backdrop-blur-md text-gold-400 font-bold text-xs px-3 py-1 rounded-full border border-gold-500/30">
+                                03
+                            </div>
+                            <div class="absolute top-3 right-3 w-10 h-10 rounded-xl bg-white/90 backdrop-blur-md text-gold-700 flex items-center justify-center text-lg shadow-md group-hover:bg-gold-500 group-hover:text-white transition-colors">
+                                <i class="fa-solid fa-sliders"></i>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-serif text-2xl text-charcoal-950 mb-2 group-hover:text-gold-700 transition-colors">
+                                DJ, Sound & Lighting
+                            </h3>
+                            <p class="text-charcoal-800/80 text-sm leading-relaxed font-light">
+                                Create the right atmosphere with professional entertainment, crystal-clear sound systems, and ambient event lighting.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-ivory-200 flex items-center justify-between text-xs font-semibold text-gold-700">
+                        <span>Custom Playlists & Production</span>
+                        <i class="fa-solid fa-chevron-right text-[10px] group-hover:translate-x-1 transition-transform"></i>
+                    </div>
+                </div>
+
+                <!-- Service 04: Catering Services -->
+                <div class="bg-white rounded-2xl border border-gold-200/80 shadow-sm hover:shadow-luxury hover:-translate-y-1 transition-all duration-300 group flex flex-col justify-between overflow-hidden">
+                    <div>
+                        <div class="relative h-48 sm:h-52 overflow-hidden img-zoom-container">
+                            <img src="https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=800&q=80" 
+                                 alt="Catering Services" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                 onerror="this.src='https://placehold.co/800x500/F3EFEA/3D101A?text=Catering+Services'">
+                            <div class="absolute top-3 left-3 bg-charcoal-950/80 backdrop-blur-md text-gold-400 font-bold text-xs px-3 py-1 rounded-full border border-gold-500/30">
+                                04
+                            </div>
+                            <div class="absolute top-3 right-3 w-10 h-10 rounded-xl bg-white/90 backdrop-blur-md text-gold-700 flex items-center justify-center text-lg shadow-md group-hover:bg-gold-500 group-hover:text-white transition-colors">
+                                <i class="fa-solid fa-utensils"></i>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-serif text-2xl text-charcoal-950 mb-2 group-hover:text-gold-700 transition-colors">
+                                Catering Services
+                            </h3>
+                            <p class="text-charcoal-800/80 text-sm leading-relaxed font-light">
+                                Thoughtfully coordinated catering experiences, multi-course dining, and bar services designed to complement your celebration.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-ivory-200 flex items-center justify-between text-xs font-semibold text-gold-700">
+                        <span>Gourmet Culinary Art</span>
+                        <i class="fa-solid fa-chevron-right text-[10px] group-hover:translate-x-1 transition-transform"></i>
+                    </div>
+                </div>
+
+                <!-- Service 05: Event Décor & Styling -->
+                <div class="bg-white rounded-2xl border border-gold-200/80 shadow-sm hover:shadow-luxury hover:-translate-y-1 transition-all duration-300 group flex flex-col justify-between overflow-hidden">
+                    <div>
+                        <div class="relative h-48 sm:h-52 overflow-hidden img-zoom-container">
+                            <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=800&q=80" 
+                                 alt="Event Décor & Styling" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                 onerror="this.src='https://placehold.co/800x500/F3EFEA/3D101A?text=Decor+%26+Styling'">
+                            <div class="absolute top-3 left-3 bg-charcoal-950/80 backdrop-blur-md text-gold-400 font-bold text-xs px-3 py-1 rounded-full border border-gold-500/30">
+                                05
+                            </div>
+                            <div class="absolute top-3 right-3 w-10 h-10 rounded-xl bg-white/90 backdrop-blur-md text-gold-700 flex items-center justify-center text-lg shadow-md group-hover:bg-gold-500 group-hover:text-white transition-colors">
+                                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-serif text-2xl text-charcoal-950 mb-2 group-hover:text-gold-700 transition-colors">
+                                Event Décor & Styling
+                            </h3>
+                            <p class="text-charcoal-800/80 text-sm leading-relaxed font-light">
+                                Beautiful styling, bespoke florals, backdrop design, and visual details that transform your venue and bring your theme to life.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-ivory-200 flex items-center justify-between text-xs font-semibold text-gold-700">
+                        <span>Bespoke Visual Concept</span>
+                        <i class="fa-solid fa-chevron-right text-[10px] group-hover:translate-x-1 transition-transform"></i>
+                    </div>
+                </div>
+
+                <!-- Service 06: Venue Sourcing -->
+                <div class="bg-white rounded-2xl border border-gold-200/80 shadow-sm hover:shadow-luxury hover:-translate-y-1 transition-all duration-300 group flex flex-col justify-between overflow-hidden">
+                    <div>
+                        <div class="relative h-48 sm:h-52 overflow-hidden img-zoom-container">
+                            <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=800&q=80" 
+                                 alt="Venue Sourcing" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                 onerror="this.src='https://placehold.co/800x500/F3EFEA/3D101A?text=Venue+Sourcing'">
+                            <div class="absolute top-3 left-3 bg-charcoal-950/80 backdrop-blur-md text-gold-400 font-bold text-xs px-3 py-1 rounded-full border border-gold-500/30">
+                                06
+                            </div>
+                            <div class="absolute top-3 right-3 w-10 h-10 rounded-xl bg-white/90 backdrop-blur-md text-gold-700 flex items-center justify-center text-lg shadow-md group-hover:bg-gold-500 group-hover:text-white transition-colors">
+                                <i class="fa-solid fa-building-circle-check"></i>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-serif text-2xl text-charcoal-950 mb-2 group-hover:text-gold-700 transition-colors">
+                                Venue Sourcing
+                            </h3>
+                            <p class="text-charcoal-800/80 text-sm leading-relaxed font-light">
+                                Find the right space in Toronto or GTA and coordinate venue services tailored specifically to match your event's needs.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-ivory-200 flex items-center justify-between text-xs font-semibold text-gold-700">
+                        <span>Exclusive Venue Network</span>
+                        <i class="fa-solid fa-chevron-right text-[10px] group-hover:translate-x-1 transition-transform"></i>
+                    </div>
+                </div>
+
+                <!-- Service 07: Hair & Makeup -->
+                <div class="bg-white rounded-2xl border border-gold-200/80 shadow-sm hover:shadow-luxury hover:-translate-y-1 transition-all duration-300 group flex flex-col justify-between overflow-hidden">
+                    <div>
+                        <div class="relative h-48 sm:h-52 overflow-hidden img-zoom-container">
+                            <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=800&q=80" 
+                                 alt="Hair & Makeup Services" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                 onerror="this.src='https://placehold.co/800x500/F3EFEA/3D101A?text=Hair+%26+Makeup'">
+                            <div class="absolute top-3 left-3 bg-charcoal-950/80 backdrop-blur-md text-gold-400 font-bold text-xs px-3 py-1 rounded-full border border-gold-500/30">
+                                07
+                            </div>
+                            <div class="absolute top-3 right-3 w-10 h-10 rounded-xl bg-white/90 backdrop-blur-md text-gold-700 flex items-center justify-center text-lg shadow-md group-hover:bg-gold-500 group-hover:text-white transition-colors">
+                                <i class="fa-solid fa-sparkles"></i>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-serif text-2xl text-charcoal-950 mb-2 group-hover:text-gold-700 transition-colors">
+                                Hair & Makeup
+                            </h3>
+                            <p class="text-charcoal-800/80 text-sm leading-relaxed font-light">
+                                Professional beauty & glam services for bridal parties, hosts, and VIP guests to help you look and feel your absolute best.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-ivory-200 flex items-center justify-between text-xs font-semibold text-gold-700">
+                        <span>Luxury Glam Styling</span>
+                        <i class="fa-solid fa-chevron-right text-[10px] group-hover:translate-x-1 transition-transform"></i>
+                    </div>
+                </div>
+
+                <!-- Service 08: Photography & Photo Booth -->
+                <div class="bg-white rounded-2xl border border-gold-200/80 shadow-sm hover:shadow-luxury hover:-translate-y-1 transition-all duration-300 group flex flex-col justify-between overflow-hidden">
+                    <div>
+                        <div class="relative h-48 sm:h-52 overflow-hidden img-zoom-container">
+                            <img src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&w=800&q=80" 
+                                 alt="Photography & Photo Booth" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                 onerror="this.src='https://placehold.co/800x500/F3EFEA/3D101A?text=Photography'">
+                            <div class="absolute top-3 left-3 bg-charcoal-950/80 backdrop-blur-md text-gold-400 font-bold text-xs px-3 py-1 rounded-full border border-gold-500/30">
+                                08
+                            </div>
+                            <div class="absolute top-3 right-3 w-10 h-10 rounded-xl bg-white/90 backdrop-blur-md text-gold-700 flex items-center justify-center text-lg shadow-md group-hover:bg-gold-500 group-hover:text-white transition-colors">
+                                <i class="fa-solid fa-camera-retro"></i>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-serif text-2xl text-charcoal-950 mb-2 group-hover:text-gold-700 transition-colors">
+                                Photography & Photo Booth
+                            </h3>
+                            <p class="text-charcoal-800/80 text-sm leading-relaxed font-light">
+                                Capture the laughter, candid moments, and aesthetic details with top photographers and interactive photo booth experiences.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-ivory-200 flex items-center justify-between text-xs font-semibold text-gold-700">
+                        <span>High-Res Digital & Print</span>
+                        <i class="fa-solid fa-chevron-right text-[10px] group-hover:translate-x-1 transition-transform"></i>
+                    </div>
+                </div>
+
+                <!-- Service 09: Cinematic Videography -->
+                <div class="bg-white rounded-2xl border border-gold-200/80 shadow-sm hover:shadow-luxury hover:-translate-y-1 transition-all duration-300 group flex flex-col justify-between overflow-hidden">
+                    <div>
+                        <div class="relative h-48 sm:h-52 overflow-hidden img-zoom-container">
+                            <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=800&q=80" 
+                                 alt="Cinematic Videography" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                 onerror="this.src='https://placehold.co/800x500/F3EFEA/3D101A?text=Cinematic+Videography'">
+                            <div class="absolute top-3 left-3 bg-charcoal-950/80 backdrop-blur-md text-gold-400 font-bold text-xs px-3 py-1 rounded-full border border-gold-500/30">
+                                09
+                            </div>
+                            <div class="absolute top-3 right-3 w-10 h-10 rounded-xl bg-white/90 backdrop-blur-md text-gold-700 flex items-center justify-center text-lg shadow-md group-hover:bg-gold-500 group-hover:text-white transition-colors">
+                                <i class="fa-solid fa-video"></i>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="font-serif text-2xl text-charcoal-950 mb-2 group-hover:text-gold-700 transition-colors">
+                                Cinematic Videography
+                            </h3>
+                            <p class="text-charcoal-800/80 text-sm leading-relaxed font-light">
+                                Professional 4K cinematic coverage, highlight films, and drone imagery that turn your special moments into lasting memories.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-ivory-200 flex items-center justify-between text-xs font-semibold text-gold-700">
+                        <span>4K Storytelling Films</span>
+                        <i class="fa-solid fa-chevron-right text-[10px] group-hover:translate-x-1 transition-transform"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Services CTA Banner -->
+            <div class="mt-16 text-center">
+                <button onclick="openConsultationModal()" class="inline-flex items-center gap-3 px-8 py-4 rounded-full text-xs font-bold uppercase tracking-widest text-charcoal-950 bg-gold-200 hover:bg-gold-500 hover:text-white border border-gold-300 transition-all shadow-md hover:shadow-gold-glow">
+                    <span>Need Help Planning Your Event?</span>
+                    <span class="underline underline-offset-4 font-extrabold">Start a Conversation →</span>
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-16 bg-charcoal-950 text-white relative overflow-hidden border-y border-gold-500/30">
+        <div class="absolute inset-0 bg-[radial-gradient(#C59A3F_1px,transparent_1px)] [background-size:24px_24px] opacity-10"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                
+                <div class="lg:col-span-5 space-y-4">
+                    <span class="text-xs font-semibold tracking-[0.25em] text-gold-400 uppercase">
+                        INTERACTIVE EVENT PLANNER
+                    </span>
+                    <h2 class="font-serif text-3xl sm:text-4xl text-white font-normal leading-tight">
+                        Tailor Your Experience in Seconds.
+                    </h2>
+                    <p class="text-ivory-300 text-sm font-light leading-relaxed">
+                        Select your occasion type and target guest size to receive an instant service blueprint from Crown & Table Toronto.
+                    </p>
+                    
+                    <div class="pt-2 flex items-center gap-3 text-xs text-gold-300">
+                        <i class="fa-solid fa-shield-halved text-gold-400"></i>
+                        <span>Instant Consultation Quote Guarantee</span>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 bg-charcoal-900/90 border border-gold-500/30 p-6 sm:p-8 rounded-2xl shadow-luxury-lg backdrop-blur-md">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-gold-300 mb-2">1. Select Occasion</label>
+                            <select id="estimator-type" onchange="calculateEstimate()" class="w-full bg-charcoal-800 border border-gold-500/40 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-gold-400">
+                                <option value="Wedding">Luxury Wedding</option>
+                                <option value="Corporate">Corporate Gala / Gathering</option>
+                                <option value="Birthday">Personalized Birthday Celebration</option>
+                                <option value="Private">Private Intimate Dinner</option>
+                                <option value="Retreat">Faith-Based Workshop / Retreat</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-gold-300 mb-2">2. Estimated Guests</label>
+                            <select id="estimator-guests" onchange="calculateEstimate()" class="w-full bg-charcoal-800 border border-gold-500/40 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-gold-400">
+                                <option value="Intimate (Under 50)">Intimate (Under 50 guests)</option>
+                                <option value="Medium (50 - 150)" selected>Medium (50 - 150 guests)</option>
+                                <option value="Grand (150 - 300)">Grand (150 - 300 guests)</option>
+                                <option value="Gala (300+)">Gala Spectacle (300+ guests)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div id="estimator-output" class="p-4 rounded-xl bg-charcoal-950 border border-gold-500/20 flex flex-col sm:flex-row items-center justify-between gap-4">
+                        <div>
+                            <span class="text-[11px] text-gold-400 uppercase tracking-widest block">Recommended Package Focus</span>
+                            <span id="estimate-title" class="font-serif text-xl text-white">Full Planning + Styling + Entertainment</span>
+                        </div>
+                        <button onclick="openConsultationModalWithEstimate()" class="px-6 py-2.5 rounded-full bg-gold-500 hover:bg-gold-400 text-charcoal-950 font-bold text-xs uppercase tracking-wider transition-all flex-shrink-0">
+                            Book This Plan →
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="perfect-for" class="py-20 md:py-28 relative bg-charcoal-950 text-white overflow-hidden">
+        
+        <!-- High-res Overlay Background Image -->
+        <div class="absolute inset-0 opacity-20 bg-cover bg-center bg-no-repeat filter brightness-75 scale-105" 
+             style="background-image: url('https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=2000&q=80');"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <span class="text-xs font-semibold tracking-[0.25em] text-gold-400 uppercase">
+                    CELEBRATIONS MADE MEMORABLE
+                </span>
+                <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-normal text-white">
+                    Perfect For Every Moment <span class="italic gold-text-gradient">Worth Celebrating</span>
+                </h2>
+                <p class="text-ivory-200 text-base font-light">
+                    Every gathering has its own unique heartbeat. We customize our coordination to fit your distinct story.
+                </p>
+            </div>
+
+            <!-- Categories Grid (6 Items) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                
+                <!-- Category 1 -->
+                <div class="p-8 rounded-2xl bg-charcoal-900/80 border border-gold-500/30 hover:border-gold-400 transition-all duration-300 group">
+                    <div class="w-10 h-10 rounded-lg bg-gold-500/20 text-gold-400 flex items-center justify-center text-lg mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-ring"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl text-white mb-2 group-hover:text-gold-300 transition-colors">Weddings</h3>
+                    <p class="text-ivory-300/80 text-sm font-light leading-relaxed">
+                        Beautifully coordinated celebrations filled with meaningful details, seamless timelines, and pure joy.
+                    </p>
+                </div>
+
+                <!-- Category 2 -->
+                <div class="p-8 rounded-2xl bg-charcoal-900/80 border border-gold-500/30 hover:border-gold-400 transition-all duration-300 group">
+                    <div class="w-10 h-10 rounded-lg bg-gold-500/20 text-gold-400 flex items-center justify-center text-lg mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-cake-candles"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl text-white mb-2 group-hover:text-gold-300 transition-colors">Birthdays</h3>
+                    <p class="text-ivory-300/80 text-sm font-light leading-relaxed">
+                        Personalized milestone parties designed around your personality, vision, high energy, and style.
+                    </p>
+                </div>
+
+                <!-- Category 3 -->
+                <div class="p-8 rounded-2xl bg-charcoal-900/80 border border-gold-500/30 hover:border-gold-400 transition-all duration-300 group">
+                    <div class="w-10 h-10 rounded-lg bg-gold-500/20 text-gold-400 flex items-center justify-center text-lg mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-champagne-glasses"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl text-white mb-2 group-hover:text-gold-300 transition-colors">Private Gatherings</h3>
+                    <p class="text-ivory-300/80 text-sm font-light leading-relaxed">
+                        Intimate and memorable dining experiences for family, friends, anniversaries, and VIP hosts.
+                    </p>
+                </div>
+
+                <!-- Category 4 -->
+                <div class="p-8 rounded-2xl bg-charcoal-900/80 border border-gold-500/30 hover:border-gold-400 transition-all duration-300 group">
+                    <div class="w-10 h-10 rounded-lg bg-gold-500/20 text-gold-400 flex items-center justify-center text-lg mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-hands-praying"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl text-white mb-2 group-hover:text-gold-300 transition-colors">Faith-Based Workshops & Retreats</h3>
+                    <p class="text-ivory-300/80 text-sm font-light leading-relaxed">
+                        Thoughtfully coordinated gatherings where warm hospitality, peace of mind, and organization matter.
+                    </p>
+                </div>
+
+                <!-- Category 5 -->
+                <div class="p-8 rounded-2xl bg-charcoal-900/80 border border-gold-500/30 hover:border-gold-400 transition-all duration-300 group">
+                    <div class="w-10 h-10 rounded-lg bg-gold-500/20 text-gold-400 flex items-center justify-center text-lg mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-masks-theater"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl text-white mb-2 group-hover:text-gold-300 transition-colors">Theme Parties</h3>
+                    <p class="text-ivory-300/80 text-sm font-light leading-relaxed">
+                        Creative concepts, immersive décor, specialized entertainment, and custom styling brought together seamlessly.
+                    </p>
+                </div>
+
+                <!-- Category 6 -->
+                <div class="p-8 rounded-2xl bg-charcoal-900/80 border border-gold-500/30 hover:border-gold-400 transition-all duration-300 group">
+                    <div class="w-10 h-10 rounded-lg bg-gold-500/20 text-gold-400 flex items-center justify-center text-lg mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl text-white mb-2 group-hover:text-gold-300 transition-colors">Life Celebrations</h3>
+                    <p class="text-ivory-300/80 text-sm font-light leading-relaxed">
+                        Meaningful life occasions deserve a compassionate, dignified, and beautifully executed experience.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="why-us" class="py-20 md:py-28 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <span class="text-xs font-semibold tracking-[0.25em] text-gold-600 uppercase">
+                    WHY CROWN & TABLE
+                </span>
+                <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-normal text-charcoal-950">
+                    More Than Event Planning. <span class="italic gold-text-gradient">We Create Experiences.</span>
+                </h2>
+            </div>
+
+            <!-- 4 Premium Feature Blocks -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
+                
+                <!-- Pillar 1 -->
+                <div class="p-8 rounded-2xl bg-ivory-100 border border-gold-200/80 flex gap-6 hover:shadow-md transition-shadow">
+                    <div class="text-3xl font-serif font-bold text-gold-500 leading-none">01</div>
+                    <div class="space-y-2">
+                        <h3 class="font-serif text-2xl text-charcoal-950">One-Stop Event Experience</h3>
+                        <p class="text-charcoal-800/80 text-sm leading-relaxed font-light">
+                            Planning, entertainment, décor, catering, beauty, photography and more — all thoughtfully coordinated under one refined roof.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pillar 2 -->
+                <div class="p-8 rounded-2xl bg-ivory-100 border border-gold-200/80 flex gap-6 hover:shadow-md transition-shadow">
+                    <div class="text-3xl font-serif font-bold text-gold-500 leading-none">02</div>
+                    <div class="space-y-2">
+                        <h3 class="font-serif text-2xl text-charcoal-950">Attention to Every Detail</h3>
+                        <p class="text-charcoal-800/80 text-sm leading-relaxed font-light">
+                            We focus on the subtle, thoughtful details that make your event feel intentional, highly polished, and personal.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pillar 3 -->
+                <div class="p-8 rounded-2xl bg-ivory-100 border border-gold-200/80 flex gap-6 hover:shadow-md transition-shadow">
+                    <div class="text-3xl font-serif font-bold text-gold-500 leading-none">03</div>
+                    <div class="space-y-2">
+                        <h3 class="font-serif text-2xl text-charcoal-950">Stress-Free Coordination</h3>
+                        <p class="text-charcoal-800/80 text-sm leading-relaxed font-light">
+                            We handle all the behind-the-scenes logistics and moving parts so you can focus entirely on your guests and enjoy your day.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pillar 4 -->
+                <div class="p-8 rounded-2xl bg-ivory-100 border border-gold-200/80 flex gap-6 hover:shadow-md transition-shadow">
+                    <div class="text-3xl font-serif font-bold text-gold-500 leading-none">04</div>
+                    <div class="space-y-2">
+                        <h3 class="font-serif text-2xl text-charcoal-950">Your Vision Comes First</h3>
+                        <p class="text-charcoal-800/80 text-sm leading-relaxed font-light">
+                            Your celebration should reflect who you are. We listen carefully, collaborate closely, and bring your unique ideas to life.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Elegant Process Timeline Bar -->
+            <div id="process" class="bg-charcoal-950 rounded-3xl p-8 sm:p-12 text-white border border-gold-500/30">
+                <div class="text-center mb-10">
+                    <span class="text-[11px] font-semibold tracking-[0.25em] text-gold-400 uppercase">HOW IT WORKS</span>
+                    <h3 class="font-serif text-2xl sm:text-3xl text-white mt-1">From First Idea to Final Celebration</h3>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 relative">
+                    
+                    <!-- Step 1 -->
+                    <div class="space-y-3 relative">
+                        <div class="w-12 h-12 rounded-full bg-gold-500 text-charcoal-950 font-bold flex items-center justify-center font-serif text-lg">01</div>
+                        <h4 class="font-serif text-xl text-gold-300 uppercase tracking-wider">DISCOVER</h4>
+                        <p class="text-xs text-ivory-300/80 leading-relaxed font-light">
+                            Tell us about your event, vision, date, aesthetic preferences, and goals during a consultation.
+                        </p>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="space-y-3 relative">
+                        <div class="w-12 h-12 rounded-full bg-gold-500 text-charcoal-950 font-bold flex items-center justify-center font-serif text-lg">02</div>
+                        <h4 class="font-serif text-xl text-gold-300 uppercase tracking-wider">PLAN</h4>
+                        <p class="text-xs text-ivory-300/80 leading-relaxed font-light">
+                            We develop the curated details, service timeline, vendor choices, and master event plan tailored to you.
+                        </p>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="space-y-3 relative">
+                        <div class="w-12 h-12 rounded-full bg-gold-500 text-charcoal-950 font-bold flex items-center justify-center font-serif text-lg">03</div>
+                        <h4 class="font-serif text-xl text-gold-300 uppercase tracking-wider">CREATE</h4>
+                        <p class="text-xs text-ivory-300/80 leading-relaxed font-light">
+                            Our team seamlessly coordinates vendors, floral styling, entertainment, sound, and dining experiences.
+                        </p>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="space-y-3 relative">
+                        <div class="w-12 h-12 rounded-full bg-gold-500 text-charcoal-950 font-bold flex items-center justify-center font-serif text-lg">04</div>
+                        <h4 class="font-serif text-xl text-gold-300 uppercase tracking-wider">CELEBRATE</h4>
+                        <p class="text-xs text-ivory-300/80 leading-relaxed font-light">
+                            You immerse yourself in the moment with your guests while our team manages every detail flawlessly.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-20 bg-ivory-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+                <div>
+                    <span class="text-xs font-semibold tracking-[0.25em] text-gold-600 uppercase">
+                        PORTFOLIO SHOWCASE
+                    </span>
+                    <h2 class="font-serif text-3xl sm:text-4xl text-charcoal-950 mt-1">
+                        Recent Toronto Celebrations
+                    </h2>
+                </div>
+
+                <!-- Gallery Category Tabs -->
+                <div class="flex items-center gap-2 overflow-x-auto no-scrollbar pb-2">
+                    <button onclick="filterGallery('all')" class="gallery-tab active px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider bg-gold-500 text-white shadow-sm transition-all">All</button>
+                    <button onclick="filterGallery('wedding')" class="gallery-tab px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider bg-white text-charcoal-800 border border-gold-200 hover:bg-gold-100 transition-all">Weddings</button>
+                    <button onclick="filterGallery('decor')" class="gallery-tab px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider bg-white text-charcoal-800 border border-gold-200 hover:bg-gold-100 transition-all">Décor & Styling</button>
+                    <button onclick="filterGallery('dining')" class="gallery-tab px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider bg-white text-charcoal-800 border border-gold-200 hover:bg-gold-100 transition-all">Dining</button>
+                </div>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <div class="gallery-item wedding img-zoom-container rounded-2xl overflow-hidden shadow-sm relative group cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=80', 'Luxury Toronto Wedding Reception')">
+                    <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80" alt="Wedding Reception" class="w-full h-72 object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-charcoal-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                        <div>
+                            <span class="text-[10px] text-gold-300 font-bold uppercase tracking-widest block">Wedding</span>
+                            <span class="text-white font-serif text-lg">Romantic Estate Wedding • Toronto</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item decor img-zoom-container rounded-2xl overflow-hidden shadow-sm relative group cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1478146896981-b80fe463b330?auto=format&fit=crop&w=1200&q=80', 'Custom Floral Canopy Styling')">
+                    <img src="https://images.unsplash.com/photo-1478146896981-b80fe463b330?auto=format&fit=crop&w=800&q=80" alt="Floral Styling" class="w-full h-72 object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-charcoal-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                        <div>
+                            <span class="text-[10px] text-gold-300 font-bold uppercase tracking-widest block">Décor & Styling</span>
+                            <span class="text-white font-serif text-lg">Custom Floral Canopy Installation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item dining img-zoom-container rounded-2xl overflow-hidden shadow-sm relative group cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=1200&q=80', 'Gourmet Plated Catering')">
+                    <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=800&q=80" alt="Gourmet Dining" class="w-full h-72 object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-charcoal-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
+                        <div>
+                            <span class="text-[10px] text-gold-300 font-bold uppercase tracking-widest block">Catering</span>
+                            <span class="text-white font-serif text-lg">Multi-Course Gourmet Dining</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="py-20 md:py-28 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <span class="text-xs font-semibold tracking-[0.25em] text-gold-600 uppercase">
+                    KIND WORDS
+                </span>
+                <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-normal text-charcoal-950">
+                    Celebrations <span class="italic gold-text-gradient">Worth Remembering</span>
+                </h2>
+            </div>
+
+            <!-- Testimonial Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Testimonial 1 -->
+                <div class="p-8 rounded-2xl bg-ivory-100 border border-gold-200/80 shadow-sm flex flex-col justify-between relative hover:shadow-luxury transition-all">
+                    <div class="space-y-4">
+                        <div class="text-gold-500 flex text-xs gap-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="font-serif text-lg text-charcoal-900 italic leading-relaxed">
+                            “Crown & Table made the entire planning process feel effortless. Every detail was beautifully coordinated and our guests had an incredible time.”
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-gold-200/50 flex items-center justify-between">
+                        <div>
+                            <span class="block font-bold text-xs uppercase tracking-wider text-charcoal-950">Sarah & Michael</span>
+                            <span class="text-[11px] text-gold-700">Toronto Wedding • Yorkville</span>
+                        </div>
+                        <i class="fa-solid fa-quote-right text-2xl text-gold-300"></i>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="p-8 rounded-2xl bg-ivory-100 border border-gold-200/80 shadow-sm flex flex-col justify-between relative hover:shadow-luxury transition-all">
+                    <div class="space-y-4">
+                        <div class="text-gold-500 flex text-xs gap-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="font-serif text-lg text-charcoal-900 italic leading-relaxed">
+                            “From the décor to the entertainment, everything came together perfectly. We were able to enjoy our celebration without worrying about a single detail.”
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-gold-200/50 flex items-center justify-between">
+                        <div>
+                            <span class="block font-bold text-xs uppercase tracking-wider text-charcoal-950">David L.</span>
+                            <span class="text-[11px] text-gold-700">Corporate Gala • Downtown Toronto</span>
+                        </div>
+                        <i class="fa-solid fa-quote-right text-2xl text-gold-300"></i>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="p-8 rounded-2xl bg-ivory-100 border border-gold-200/80 shadow-sm flex flex-col justify-between relative hover:shadow-luxury transition-all">
+                    <div class="space-y-4">
+                        <div class="text-gold-500 flex text-xs gap-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="font-serif text-lg text-charcoal-900 italic leading-relaxed">
+                            “Professional, creative and incredibly attentive. Crown & Table brought our vision to life and made our milestone event truly special.”
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-gold-200/50 flex items-center justify-between">
+                        <div>
+                            <span class="block font-bold text-xs uppercase tracking-wider text-charcoal-950">Elena & Marcus</span>
+                            <span class="text-[11px] text-gold-700">Milestone Celebration • Oakville</span>
+                        </div>
+                        <i class="fa-solid fa-quote-right text-2xl text-gold-300"></i>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-20 md:py-24 bg-gradient-to-r from-gold-600 via-gold-500 to-gold-700 text-white relative overflow-hidden shadow-luxury-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 space-y-6">
+            
+            <span class="text-xs font-semibold tracking-[0.3em] uppercase text-gold-100">
+                LET'S MAKE IT UNFORGETTABLE
+            </span>
+
+            <h2 class="font-serif text-4xl sm:text-5xl md:text-6xl font-normal text-white max-w-4xl mx-auto leading-tight">
+                Your Celebration Deserves Its Moment to Shine.
+            </h2>
+
+            <p class="text-white/90 text-base sm:text-lg max-w-2xl mx-auto font-light">
+                Let's turn your ideas into an experience your guests will remember for years to come.
+            </p>
+
+            <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+                <button onclick="openConsultationModal()" class="w-full sm:w-auto px-8 py-4 rounded-full text-xs font-bold uppercase tracking-widest text-charcoal-950 bg-white hover:bg-ivory-100 transition-all shadow-lg transform hover:-translate-y-0.5">
+                    Book a Free Consultation →
+                </button>
+                <a href="tel:6475420279" class="w-full sm:w-auto px-8 py-4 rounded-full text-xs font-bold uppercase tracking-widest text-white border border-white/60 hover:bg-white/10 transition-all text-center">
+                    <i class="fa-solid fa-phone mr-2"></i> Call 647-542-0279
+                </a>
+            </div>
+
+            <p class="text-xs text-gold-100/80 font-light pt-2">
+                Let's talk about your vision, your date and how Crown & Table can bring it all together.
+            </p>
+
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 md:py-28 bg-ivory-100 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <span class="text-xs font-semibold tracking-[0.25em] text-gold-600 uppercase">
+                    LET'S START PLANNING
+                </span>
+                <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-normal text-charcoal-950">
+                    Tell Us About Your Celebration
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                
+                <!-- Left Info Column -->
+                <div class="lg:col-span-5 space-y-8 bg-white p-8 sm:p-10 rounded-3xl border border-gold-200/80 shadow-sm">
+                    
+                    <div>
+                        <h3 class="font-serif text-2xl text-charcoal-950 uppercase tracking-wider mb-1">
+                            CROWN & TABLE
+                        </h3>
+                        <p class="text-xs font-semibold tracking-widest text-gold-600 uppercase">
+                            HOSPITALITY & EVENTS
+                        </p>
+                        <p class="text-sm text-charcoal-800/70 mt-2">Toronto, Ontario, Canada</p>
+                    </div>
+
+                    <div class="space-y-4 pt-4 border-t border-ivory-200">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-full bg-gold-100 text-gold-700 flex items-center justify-center">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <span class="text-[11px] text-charcoal-800/60 uppercase font-semibold block">Direct Call / WhatsApp</span>
+                                <a href="tel:6475420279" class="text-base font-bold text-charcoal-900 hover:text-gold-600 transition-colors">647-542-0279</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-full bg-gold-100 text-gold-700 flex items-center justify-center">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <span class="text-[11px] text-charcoal-800/60 uppercase font-semibold block">Inquiries Email</span>
+                                <a href="mailto:bossbabechinky@gmail.com" class="text-sm font-bold text-charcoal-900 hover:text-gold-600 transition-colors">bossbabechinky@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Direct Buttons -->
+                    <div class="grid grid-cols-2 gap-3 pt-2">
+                        <a href="tel:6475420279" class="py-3 px-4 rounded-xl text-center text-xs font-bold uppercase tracking-wider bg-charcoal-900 text-white hover:bg-gold-600 transition-colors">
+                            <i class="fa-solid fa-phone mr-1"></i> Call Us
+                        </a>
+                        <a href="mailto:bossbabechinky@gmail.com" class="py-3 px-4 rounded-xl text-center text-xs font-bold uppercase tracking-wider bg-gold-200 text-charcoal-950 hover:bg-gold-500 hover:text-white transition-colors border border-gold-300">
+                            <i class="fa-solid fa-envelope mr-1"></i> Email Us
+                        </a>
+                    </div>
+
+                    <div class="p-4 rounded-2xl bg-ivory-100 border border-gold-200 text-xs text-charcoal-800/80 space-y-1">
+                        <p class="font-bold text-gold-700 uppercase">Consultation Response Guarantee</p>
+                        <p class="font-light">We respond to all new event inquiries within 24 hours.</p>
+                    </div>
+
+                </div>
+
+                <!-- Right Form Column -->
+                <div class="lg:col-span-7 bg-white p-8 sm:p-10 rounded-3xl border border-gold-200/80 shadow-sm">
+                    
+                    <form id="contact-form" onsubmit="handleFormSubmit(event)" class="space-y-6">
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-charcoal-900 mb-2">Full Name *</label>
+                                <input type="text" required placeholder="e.g. Alexandra Smith" class="w-full bg-ivory-50 border border-gold-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-gold-500 focus:bg-white transition-all">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-charcoal-900 mb-2">Email Address *</label>
+                                <input type="email" required placeholder="alexandra@example.com" class="w-full bg-ivory-50 border border-gold-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-gold-500 focus:bg-white transition-all">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-charcoal-900 mb-2">Phone Number *</label>
+                                <input type="tel" required placeholder="647-000-0000" class="w-full bg-ivory-50 border border-gold-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-gold-500 focus:bg-white transition-all">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-charcoal-900 mb-2">Event Type *</label>
+                                <select required class="w-full bg-ivory-50 border border-gold-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-gold-500 focus:bg-white transition-all">
+                                    <option value="">Select Event Type...</option>
+                                    <option value="Wedding">Luxury Wedding</option>
+                                    <option value="Birthday">Personalized Birthday Party</option>
+                                    <option value="Private Gathering">Private Gathering</option>
+                                    <option value="Faith Retreat">Faith-Based Workshop / Retreat</option>
+                                    <option value="Theme Party">Creative Theme Party</option>
+                                    <option value="Life Celebration">Life Celebration</option>
+                                    <option value="Corporate">Corporate Gathering / Gala</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-charcoal-900 mb-2">Target Event Date</label>
+                                <input type="date" class="w-full bg-ivory-50 border border-gold-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-gold-500 focus:bg-white transition-all">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-charcoal-900 mb-2">Number of Guests</label>
+                                <input type="number" placeholder="e.g. 120" class="w-full bg-ivory-50 border border-gold-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-gold-500 focus:bg-white transition-all">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-charcoal-900 mb-2">Tell Us About Your Event</label>
+                            <textarea rows="4" placeholder="Share your vision, preferred Toronto venue, styling thoughts, or specific services needed..." class="w-full bg-ivory-50 border border-gold-200 rounded-xl p-4 text-sm focus:outline-none focus:border-gold-500 focus:bg-white transition-all"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl text-xs font-bold uppercase tracking-widest text-white bg-charcoal-950 hover:bg-gold-600 transition-all shadow-md hover:shadow-gold-glow">
+                            Request Your Free Consultation →
+                        </button>
+
+                        <p class="text-center text-[11px] text-charcoal-800/60">
+                            We'd love to hear your vision and help you bring it to life effortlessly.
+                        </p>
+
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="py-6 bg-gold-100 border-y border-gold-300/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="text-center sm:text-left">
+                <span class="text-xs font-bold tracking-widest uppercase text-gold-800">Planning Something Special?</span>
+                <p class="text-sm font-serif text-charcoal-900 italic">Let's make it unforgettable together.</p>
+            </div>
+            <button onclick="openConsultationModal()" class="px-6 py-2 rounded-full text-xs font-bold uppercase tracking-wider text-white bg-charcoal-900 hover:bg-gold-600 transition-colors shadow-sm">
+                Start Planning →
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-charcoal-950 text-white pt-16 pb-12 border-t border-gold-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12">
+                
+                <!-- Brand Info -->
+                <div class="md:col-span-5 space-y-4">
+                    <a href="#home" class="flex flex-col items-start">
+                        <span class="font-serif text-2xl tracking-widest text-white font-semibold uppercase">
+                            Crown & Table
+                        </span>
+                        <span class="text-[9px] tracking-[0.25em] text-gold-400 font-medium uppercase">
+                            Hospitality & Events • Toronto
+                        </span>
+                    </a>
+                    <p class="font-serif text-gold-300 italic text-base">
+                        “Gatherings Worthy of Your Story.”
+                    </p>
+                    <p class="text-xs text-ivory-300/70 leading-relaxed font-light max-w-sm">
+                        Where every celebration deserves its moment to shine. Toronto's premier one-stop event planning and hospitality management partner.
+                    </p>
+                </div>
+
+                <!-- Navigation Quick Links -->
+                <div class="md:col-span-3 space-y-3">
+                    <span class="text-xs font-bold uppercase tracking-widest text-gold-400 block mb-2">Explore</span>
+                    <ul class="space-y-2 text-xs text-ivory-200">
+                        <li><a href="#home" class="hover:text-gold-400 transition-colors">Home</a></li>
+                        <li><a href="#about" class="hover:text-gold-400 transition-colors">About Us</a></li>
+                        <li><a href="#services" class="hover:text-gold-400 transition-colors">Our Services</a></li>
+                        <li><a href="#perfect-for" class="hover:text-gold-400 transition-colors">Celebrations</a></li>
+                        <li><a href="#why-us" class="hover:text-gold-400 transition-colors">Why Choose Us</a></li>
+                        <li><a href="#testimonials" class="hover:text-gold-400 transition-colors">Testimonials</a></li>
+                        <li><a href="#contact" class="hover:text-gold-400 transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact & Social -->
+                <div class="md:col-span-4 space-y-4">
+                    <span class="text-xs font-bold uppercase tracking-widest text-gold-400 block mb-2">Get In Touch</span>
+                    <div class="text-xs text-ivory-200 space-y-2 font-light">
+                        <p><i class="fa-solid fa-phone text-gold-400 mr-2"></i> 647-542-0279</p>
+                        <p><i class="fa-solid fa-envelope text-gold-400 mr-2"></i> bossbabechinky@gmail.com</p>
+                        <p><i class="fa-solid fa-location-dot text-gold-400 mr-2"></i> Toronto, Ontario, Canada</p>
+                    </div>
+
+                    <div class="pt-2 flex items-center gap-3">
+                        <a href="https://instagram.com" target="_blank" class="w-8 h-8 rounded-full bg-charcoal-900 border border-gold-500/30 flex items-center justify-center text-xs text-gold-300 hover:bg-gold-500 hover:text-charcoal-950 transition-all">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://facebook.com" target="_blank" class="w-8 h-8 rounded-full bg-charcoal-900 border border-gold-500/30 flex items-center justify-center text-xs text-gold-300 hover:bg-gold-500 hover:text-charcoal-950 transition-all">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bottom Line -->
+            <div class="pt-8 border-t border-gold-500/20 flex flex-col sm:flex-row items-center justify-between text-[11px] text-ivory-300/60 gap-4">
+                <p>© 2026 Crown & Table Hospitality & Events. All Rights Reserved.</p>
+                <div class="flex gap-4">
+                    <a href="javascript:void(0)" onclick="openPrivacyModal()" class="hover:text-gold-400">Privacy Policy</a>
+                    <span>•</span>
+                    <a href="javascript:void(0)" onclick="openPrivacyModal()" class="hover:text-gold-400">Terms of Service</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Interactive Free Consultation Booking Modal -->
+    <div id="consultation-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-charcoal-950/80 backdrop-blur-sm">
+        <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 relative border border-gold-300 shadow-luxury-lg max-h-[90vh] overflow-y-auto">
+            <button onclick="closeConsultationModal()" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-ivory-100 text-charcoal-900 hover:bg-gold-500 hover:text-white transition-colors flex items-center justify-center text-sm">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="text-center space-y-2 mb-6">
+                <span class="text-[10px] font-bold tracking-[0.25em] text-gold-600 uppercase">CROWN & TABLE</span>
+                <h3 class="font-serif text-2xl text-charcoal-950">Book Your Free Consultation</h3>
+                <p class="text-xs text-charcoal-800/70 font-light">Tell us a little about your event and we'll connect with you shortly.</p>
+            </div>
+
+            <form onsubmit="handleModalFormSubmit(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-bold uppercase tracking-wider text-charcoal-900 mb-1">Your Name *</label>
+                    <input type="text" required placeholder="Full name" class="w-full bg-ivory-50 border border-gold-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-gold-500">
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-charcoal-900 mb-1">Email *</label>
+                        <input type="email" required placeholder="name@domain.com" class="w-full bg-ivory-50 border border-gold-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-gold-500">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-charcoal-900 mb-1">Phone *</label>
+                        <input type="tel" required placeholder="647-000-0000" class="w-full bg-ivory-50 border border-gold-200 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:border-gold-500">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold uppercase tracking-wider text-charcoal-900 mb-1">Event Type & Notes</label>
+                    <textarea id="modal-notes" rows="3" placeholder="Wedding, Birthday, Corporate, Private Dining..." class="w-full bg-ivory-50 border border-gold-200 rounded-xl p-3 text-sm focus:outline-none focus:border-gold-500"></textarea>
+                </div>
+
+                <button type="submit" class="w-full py-3.5 rounded-xl text-xs font-bold uppercase tracking-widest text-white bg-gold-500 hover:bg-gold-600 transition-colors shadow-md">
+                    Submit Consultation Request →
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Image Lightbox Modal -->
+    <div id="lightbox-modal" class="fixed inset-0 z-50 hidden bg-charcoal-950/90 backdrop-blur-md flex items-center justify-center p-4" onclick="closeLightbox()">
+        <div class="relative max-w-4xl w-full text-center" onclick="event.stopPropagation()">
+            <button onclick="closeLightbox()" class="absolute -top-12 right-0 text-white hover:text-gold-400 text-2xl">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <img id="lightbox-img" src="" alt="Zoomed Event Photo" class="max-h-[80vh] mx-auto rounded-2xl shadow-luxury-lg object-contain">
+            <p id="lightbox-caption" class="text-white font-serif text-lg mt-4"></p>
+        </div>
+    </div>
+
+    <!-- Notification Toast Modal -->
+    <div id="toast-modal" class="fixed bottom-6 right-6 z-50 hidden bg-charcoal-950 text-white border border-gold-500/60 p-4 rounded-2xl shadow-luxury-lg flex items-center gap-3">
+        <div class="w-8 h-8 rounded-full bg-gold-500 text-charcoal-950 flex items-center justify-center font-bold">
+            <i class="fa-solid fa-check"></i>
+        </div>
+        <div>
+            <div id="toast-title" class="text-xs font-bold text-gold-300">Success!</div>
+            <div id="toast-msg" class="text-xs text-ivory-200">Thank you! We will contact you shortly.</div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle logic
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.className = 'fa-solid fa-bars text-xl';
+            } else {
+                menuIcon.className = 'fa-solid fa-xmark text-xl';
+            }
+        });
+
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIcon.className = 'fa-solid fa-bars text-xl';
+            });
+        });
+
+        // Header glass transition on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('main-header');
+            if (window.scrollY > 50) {
+                header.classList.add('shadow-sm');
+            } else {
+                header.classList.remove('shadow-sm');
+            }
+        });
+
+        // Modal Controllers
+        function openConsultationModal() {
+            document.getElementById('consultation-modal').classList.remove('hidden');
+        }
+
+        function closeConsultationModal() {
+            document.getElementById('consultation-modal').classList.add('hidden');
+        }
+
+        function openConsultationModalWithEstimate() {
+            const type = document.getElementById('estimator-type').value;
+            const guests = document.getElementById('estimator-guests').value;
+            const notes = document.getElementById('modal-notes');
+            if (notes) {
+                notes.value = `Estimated Plan Request: ${type} for ${guests}.`;
+            }
+            openConsultationModal();
+        }
+
+        // Gallery Filter
+        function filterGallery(category) {
+            const items = document.querySelectorAll('.gallery-item');
+            const tabs = document.querySelectorAll('.gallery-tab');
+
+            tabs.forEach(tab => {
+                tab.classList.remove('bg-gold-500', 'text-white');
+                tab.classList.add('bg-white', 'text-charcoal-800');
+            });
+
+            event.target.classList.remove('bg-white', 'text-charcoal-800');
+            event.target.classList.add('bg-gold-500', 'text-white');
+
+            items.forEach(item => {
+                if (category === 'all' || item.classList.contains(category)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        // Lightbox
+        function openLightbox(src, caption) {
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox-caption').innerText = caption;
+            document.getElementById('lightbox-modal').classList.remove('hidden');
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox-modal').classList.add('hidden');
+        }
+
+        // Interactive Estimator logic
+        function calculateEstimate() {
+            const type = document.getElementById('estimator-type').value;
+            const guests = document.getElementById('estimator-guests').value;
+            const titleEl = document.getElementById('estimate-title');
+
+            if (type === 'Wedding') {
+                titleEl.innerText = `Full Planning + Styling + Entertainment (${guests})`;
+            } else if (type === 'Corporate') {
+                titleEl.innerText = `Gala Host + AV Sound/Lighting + Catering (${guests})`;
+            } else if (type === 'Birthday') {
+                titleEl.innerText = `Theme Styling + DJ & Photo Booth Package (${guests})`;
+            } else {
+                titleEl.innerText = `Bespoke Experience Coordination (${guests})`;
+            }
+        }
+
+        // Custom Toast Notification
+        function showToast(title, message) {
+            document.getElementById('toast-title').innerText = title;
+            document.getElementById('toast-msg').innerText = message;
+            const toast = document.getElementById('toast-modal');
+            toast.classList.remove('hidden');
+            setTimeout(() => {
+                toast.classList.add('hidden');
+            }, 4000);
+        }
+
+        // Form Submit Handlers (Replacing native alert)
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            showToast("Consultation Requested!", "Thank you for contacting Crown & Table Toronto. We will reach out within 24 hours.");
+            e.target.reset();
+        }
+
+        function handleModalFormSubmit(e) {
+            e.preventDefault();
+            closeConsultationModal();
+            showToast("Inquiry Received!", "We look forward to planning your special occasion.");
+            e.target.reset();
+        }
+
+        function openPrivacyModal() {
+            showToast("Privacy & Terms", "Crown & Table Toronto respects your personal information and privacy.");
+        }
+    </script>
+</body>
+</html>
